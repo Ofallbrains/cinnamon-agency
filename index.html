@@ -12,25 +12,43 @@
 
 <body>
 
-  <div class="nav p-5 bg-white md:flex md:items-center md:justify-between">
+  <div class="nav p-5 bg-white lg:flex lg:items-center lg:justify-between w-full max-w-[1200px] mx-auto">
     <div class="flex justify-between">
 
       <h1 class="text-3xl font-bold ">CINNAMON</h1>
 
-      <span><ion-icon name="menu-outline" class="text-3xl cursor-pointer m-1 md:hidden"></ion-icon></span>
+      <span class="text-3xl cursor-pointer m-1 lg:hidden block"><ion-icon name="menu-outline"
+          onclick="Menu(this)"></ion-icon></span>
 
     </div>
 
-    <ul class="md:flex md:items-center md:justify-between md:static absolute w-full left-0">
-      <li class="mx-4 my-6 md:my-0"><a href="" class="hover:text-[#5135FF] font-bold text-lg duration-500">Projects</a></li>
-      <li class="mx-4 my-6 md:my-0"><a href="" class="hover:text-[#5135FF] font-bold text-lg duration-500">Services</a></li>
-      <li class="mx-4 my-6 md:my-0"><a href="" class="hover:text-[#5135FF] font-bold text-lg duration-500">About Us</a></li>
-      <li class="mx-4 my-6 md:my-0"><a href="" class="hover:text-[#5135FF] font-bold text-lg duration-500" >Careers</a></li>
-      <li class="mx-4 my-6 md:my-0"><a href="" class="hover:text-[#5135FF] font-bold text-lg duration-500">Blog</a></li> 
-      <li class="mx-4 my-6 md:my-0"><ion-icon name="play-circle-outline" class="text-[#5135FF] text-[50px]"></ion-icon></li>
-      <button class="bg-[#5135FF] text-white p-2 w-[200px]">Let's collaborate</button>
+    <ul
+      class="lg:flex lg:items-center items-center z-[-1] lg:z-auto lg:justify-between lg:static absolute w-full left-0 lg:w-auto lg:py-0 lg:pl-0 placeholder:blue-700 lg:opacity-100 opacity-0">
+      <li class="mx-6 my-6 lg:my-0"><a href="" class="hover:text-[#5135FF] font-bold text-lg duration-500">Projects</a>
+      </li>
+      <li class="mx-6 my-6 lg:my-0"><a href="" class="hover:text-[#5135FF] font-bold text-lg duration-500">Services</a>
+      </li>
+      <li class="mx-6 my-6 lg:my-0"><a href="" class="hover:text-[#5135FF] font-bold text-lg duration-500">About Us</a>
+      </li>
+      <li class="mx-6 my-6 lg:my-0"><a href="" class="hover:text-[#5135FF] font-bold text-lg duration-500">Careers</a>
+      </li>
+      <li class="mx-6 my-6 lg:my-0"><a href="" class="hover:text-[#5135FF] font-bold text-lg duration-500">Blog</a></li>
+      <li class="mx-6 my-6 lg:my-0 hidden"><ion-icon name="play-circle-outline"
+          class="text-[#5135FF] text-[50px]"></ion-icon>
+      </li>
+      <button class="lg:bg-[#5135FF] lg:text-white lg:px-6 lg:py-2 lg:cursor-pointer  lg:w-[200px]">Let's
+        collaborate</button>
     </ul>
   </div>
+
+  <script>
+    function Menu(e) {
+
+      let list = document.querySelector('ul')
+
+      e.name === "menu-outline" ? (e.name = "close-outline", list.classList.add('top-[70px]'), list.classList.add('opacity-100')) : (e.name = "menu-outline", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
 </body>
 
 </html>
