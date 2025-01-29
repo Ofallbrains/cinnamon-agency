@@ -713,6 +713,9 @@
   .m-1 {
     margin: calc(var(--spacing) * 1);
   }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
   .mx-6 {
     margin-inline: calc(var(--spacing) * 6);
   }
@@ -721,6 +724,9 @@
   }
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
+  }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
   }
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
@@ -1461,23 +1467,26 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
-  .bg-\[\#4E2680\] {
-    background-color: #4E2680;
-  }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
+  .bg-\[\#0E4B92\] {
+    background-color: #0E4B92;
+  }
+  .bg-\[\#4E2680\] {
+    background-color: #4E2680;
+  }
   .bg-\[\#17464F\] {
     background-color: #17464F;
-  }
-  .bg-\[\#\] {
-    background-color: #;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1487,9 +1496,6 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
-  }
-  .bg-red-600 {
-    background-color: var(--color-red-600);
   }
   .bg-white {
     background-color: var(--color-white);
